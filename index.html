@@ -16,11 +16,11 @@
     <script>
  
     $(document).ready(function() {
-      $("#goToInstructions").click(function() {
+      $(".goToInstructions").click(function() {
         $('#theGameScreen').css('font-size','2em');
         $('#teamName').hide();
         $("#teamName").show().load("instruction.html").fadeIn('2000');
-        $('#goToInstructions').css('value','null').hide();
+        $('.goToInstructions').css('value','null').hide();
       });
     });
      
@@ -54,7 +54,7 @@
         bottom: 0;
       }
       
-      #goToInstructions {
+      .goToInstructions {
         position: absolute;
         height: 30px;
         top:470px;
@@ -74,7 +74,7 @@
         <div id="teamName">
           <p>JAVA THE HUTT</p> 
         </div>
-        <input id="goToInstructions" type="button" value="Continue"/>
+        <input class="goToInstructions" type="button" value="Continue"/>
       </div>
     </div>
     
