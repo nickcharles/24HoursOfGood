@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>24hoursofgood by nickcharles</title>
+    <title>Saftey in Numbers</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -26,7 +26,7 @@
           $('.goToInstructions').hide();
           $('#teamName').hide();
           //$('#teamName').css('height','100%');
-          $('#theGameScreen').load("CyberSecurity.html")
+          $('#theGameScreenContainer').load("CyberSecurity.html");
         }
         else
         {
@@ -36,55 +36,48 @@
           $('#firstButton').val('Play the Game!');
           firstButtonClicked = true;
         }
-        
       });
-     
-      
     });
-     
-  
      
   </script>
     <style>
-      #theGameScreen {
-            width: 50%;
-            margin-left: 25%;
-            background:url('http://interfacelift.com/wallpaper/previews/03552_colorsofthesunset@2x.jpg') no-repeat center center fixed;
-            background-size: cover;
-            height: 100%;
-            border-radius: 5px;
-            position: relative;
-            font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-weight: 700;
-            letter-spacing: 1px;
-            font-size: 7em;
-            color: #fff;
-      }
-
       #theGameScreenContainer {
-        padding-top:5%;
         background-color:white;
         height: 500px;
       }
-      
-      #credits {
-        position: absolute;
-        bottom: 0;
+    
+      #theGameScreen {
+        width: 50%;
+        margin-left: 25%;
+        background:url('http://interfacelift.com/wallpaper/previews/03552_colorsofthesunset@2x.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        border-radius: 5px;
+        position: relative;
+        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 7em;
+        color: #fff;
+        text-align: center;
       }
       
       .goToInstructions {
-        position: absolute;
+        position: relative;
         height: 30px;
-        top:470px;
-        color: red;
+        color: black;
         font-family:Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        margin-left: 46%;
         text-align: center;
         background-color: #fff;
       }
       
       #teamName {
-        text-align:center;
+        text-align: center;
+      }
+      
+      #credits {
+        position: absolute;
+        bottom: 0;
       }
     </style>
   </head>
@@ -93,7 +86,7 @@
     <div id="theGameScreenContainer">
       <div id="theGameScreen" >
         <div id="teamName">
-          <p>JAVA THE HUTT</p> 
+          <p>SAFETY IN NUMBERS</p> 
         </div>
         <input class="goToInstructions" class='btn' id='firstButton' type="button" value="Continue"/>
       </div>
@@ -102,7 +95,6 @@
 
     <div id="credits">
       <h3><a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
       <p>Alex Levinson (<a href="https://github.com/levinsonalex" class="user-mention">@levinsonalex</a>), Nick Morgan (<a href="https://github.com/nickcharles" class="user-mention">@nickcharles</a>), Leda Daehler (<a href="https://github.com/ldaehler" class="user-mention">@ldaehler</a>), Garrison Bellack (<a href="https://github.com/gbellack" class="user-mention">@gbellack</a>), and Spencer Buja (<a href="https://github.com/csbuja" class="user-mention">@csbuja</a>).</p>
     </div>
   </body>
