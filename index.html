@@ -19,19 +19,22 @@
       var firstButtonClicked = false;
       
       $("#firstButton").click(function() {
-        $('#theGameScreen').css('font-size','2em');
-        $('#teamName').hide();
-        $("#teamName").show().load("instruction.html").fadeIn('2000');
-        $('#firstButton').val('Play the Game!');
-        firstButtonClicked = true;
-        jQuery(this).attr("id","secondButton");
+         
+        if(firstButtonClicked)
+        {
+          $('.goToInstructions').hide();
+        }
+        else
+        {
+          $('#theGameScreen').css('font-size','2em');
+          $('#teamName').hide();
+          $("#teamName").show().load("instruction.html").fadeIn('2000');
+          $('#firstButton').val('Play the Game!');
+          firstButtonClicked = true;
+        }
+        
       });
-      
-      if(firstButtonClicked)
-      {
-        $('.goToInstructions').hide();
-      }
-      
+     
       
     });
      
