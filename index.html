@@ -17,7 +17,9 @@
     $(document).ready(function() {
       $("#goToInstructions").click(function() {
         $('#theGameScreen').css('font-size','2em');
-        $("#teamName").load("instruction.html");
+        $("#teamName").load("instruction.html",function(){
+                $('#teamName').fadeIn('slow');
+            });
       });
     });
      
