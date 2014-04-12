@@ -16,12 +16,7 @@
     <script>
     $(document).ready(function(){
       $("#goToInstructions").click(function() {
-        $("#teamName").load( "/instruction.html", function( response, status, xhr ) {
-          if ( status == "error" ) {
-            var msg = "Sorry but there was an error: ";
-            $( "#error" ).html( msg + xhr.status + " " + xhr.statusText );
-          }
-        });
+        $("#teamName").load( "/instruction.html";
       });
     });
      
@@ -78,7 +73,6 @@
       </div>
     </div>
     
-    <div id="error"></div>
 
     <div id="credits">
       <h3><a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
