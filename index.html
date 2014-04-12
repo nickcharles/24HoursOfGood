@@ -16,6 +16,8 @@
     <script>
     $(document).ready(function() {
       $("#goToInstructions").click(function() {
+        $(this).css('position','absolute');
+        $(this).css('','');
         $("#teamName").load("instruction.html");
       });
     });
@@ -49,11 +51,10 @@
       }
       
       #goToInstructions {
-        position: relative;
+        position: absolute;
         height: 30px;
-        margin-top: 25%;
-        padding-left: 25%;
-        margin-left: 25%;
+        top:470px;
+        margin-left: 50%;
         text-align: center;
       }
       
