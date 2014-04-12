@@ -14,15 +14,16 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
     </script>
     <script>
+ 
     $(document).ready(function() {
       $("#goToInstructions").click(function() {
         $('#theGameScreen').css('font-size','2em');
-        $('#teamName').hide().load(function () {
-            $(this).fadeIn();
-        })
-        .attr('src', 'instruction.html')
+        $('#teamName').hide();
+        $("#teamName").show().load("instruction.html").fadeIn('2000');
       });
     });
+     
+  
      
   </script>
     <style>
