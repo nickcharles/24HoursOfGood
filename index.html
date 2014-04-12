@@ -16,17 +16,22 @@
     <script>
  
     $(document).ready(function() {
+      var firstButtonClicked = false;
+      
       $("#firstButton").click(function() {
         $('#theGameScreen').css('font-size','2em');
         $('#teamName').hide();
         $("#teamName").show().load("instruction.html").fadeIn('2000');
         $('#firstButton').val('Play the Game!');
+        firstButtonClicked = true;
         jQuery(this).attr("id","secondButton");
       });
       
-      $('#secondButton').click(function(){
-        $('#secondButton').hide();
-      });
+      if(firstButtonClicked)
+      {
+        $('.goToInstructions').hide();
+      }
+      
       
     });
      
