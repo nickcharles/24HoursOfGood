@@ -16,7 +16,12 @@
     <script>
     $(document).ready(function(){
       $("#goToInstructions").click(function() {
-        $("#teamName").load("instructions.html");
+        $("#teamName").load( "/instruction.html", function( response, status, xhr ) {
+          if ( status == "error" ) {
+            var msg = "Sorry but there was an error: ";
+            $( "#error" ).html( msg + xhr.status + " " + xhr.statusText );
+          }
+        });
       });
     });
      
