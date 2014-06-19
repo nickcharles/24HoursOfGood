@@ -1,4 +1,5 @@
 #gameScreenContainer {
+  text-align: center;
   background-color:white;
   height: 500px;
 }
@@ -15,7 +16,6 @@
   letter-spacing: 1px;
   font-size: 4em;
   color: #fff;
-  text-align: center;
 }
 
 #startButton {
