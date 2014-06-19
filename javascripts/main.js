@@ -4,7 +4,7 @@ $(document).ready(function() {
     if(startButtonClicked) {
       $('#startButton').hide();
       $('#title').hide();
-      $('#gameScreenContainer').load("CyberSecurity.html");
+      $('#gameScreenContainer').load("test.html");
     }
     else {
       $('#gameScreen').css('font-size','2em');
