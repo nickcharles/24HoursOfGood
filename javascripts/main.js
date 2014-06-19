@@ -1,1 +1,17 @@
-console.log('This would be the main JS file.');
+$(document).ready(function() {
+  var startButtonClicked = false;
+  $('#startButton').click(function() {
+    if(startButtonClicked) {
+      $('#startButton').hide();
+      $('#title').hide();
+      $('#gameScreenContainer').load("CyberSecurity.html");
+    }
+    else {
+      $('#gameScreen').css('font-size','2em');
+      $('#title').hide();
+      $('#title').show().load("instruction.html").fadeIn('2000');
+      $('#startButton').val('Play the Game!');
+      startButtonClicked = true;
+    }
+  });
+});

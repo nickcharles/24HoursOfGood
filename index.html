@@ -3,99 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Saftey in Numbers</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico"/>  
+    <title>Safety in Numbers</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/custom.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-    <link rel="shortcut icon" href="images/favicon.ico"/>
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    
-    <script>
-      $(document).ready(function() {
-        var firstButtonClicked = false;
-        $("#firstButton").click(function() {
-          if(firstButtonClicked) {
-            $('.goToInstructions').hide();
-            $('#teamName').hide();
-            //$('#teamName').css('height','100%');
-            $('#theGameScreenContainer').load("CyberSecurity.html");
-          }
-          else {
-            $('#theGameScreen').css('font-size','2em');
-            $('#teamName').hide();
-            $("#teamName").show().load("instruction.html").fadeIn('2000');
-            $('#firstButton').val('Play the Game!');
-            firstButtonClicked = true;
-          }
-        });
-      });
-    </script>
-    
-    <style>
-      #theGameScreenContainer {
-        background-color:white;
-        height: 500px;
-      }
-    
-      #theGameScreen {
-        width: 50%;
-        margin-left: 25%;
-        background:url('http://interfacelift.com/wallpaper/previews/03552_colorsofthesunset@2x.jpg') no-repeat center center fixed;
-        background-size: cover;
-        height: 100%;
-        border-radius: 5px;
-        position: relative;
-        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 700;
-        letter-spacing: 1px;
-        font-size: 4em;
-        color: #fff;
-        text-align: center;
-      }
-      
-      .goToInstructions {
-        position: relative;
-        height: 30px;
-        color: black;
-        font-family:Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        text-align: center;
-        background-color: #fff;
-      }
-      
-      #teamName {
-        text-align: center;
-      }
-      
-      #credits {
-        position: absolute;
-        bottom: 0;
-      }
-    </style>
-    
+    <![endif]--> 
   </head>
 
   <body>
   
-    <div id="theGameScreenContainer">
-      <div id="theGameScreen" >
-        <div id="teamName">
+    <div id="gameScreenContainer">
+      <div id="gameScreen" >
+        <div id="title">
           <p>SAFETY IN NUMBERS</p> 
         </div>
-        <input class="goToInstructions" class='btn' id='firstButton' type="button" value="Continue"/>
+        <input class='btn' id='startButton' type="button" value="Continue">
       </div>
     </div>
     
     <div id="credits">
       <h3><a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-      <p>Alex Levinson (<a href="https://github.com/levinsonalex" class="user-mention">@levinsonalex</a>), Nick Morgan (<a href="https://github.com/nickcharles" class="user-mention">@nickcharles</a>), Leda Daehler (<a href="https://github.com/ldaehler" class="user-mention">@ldaehler</a>), and Spencer Buja (<a href="https://github.com/csbuja" class="user-mention">@csbuja</a>).</p>
+      <p>Alex Levinson (<a href="https://github.com/levinsonalex" class="user-mention">@levinsonalex</a>),
+          Nick Morgan (<a href="https://github.com/nickcharles" class="user-mention">@nickcharles</a>), 
+          Leda Daehler (<a href="https://github.com/ldaehler" class="user-mention">@ldaehler</a>), 
+          and Spencer Buja (<a href="https://github.com/csbuja" class="user-mention">@csbuja</a>).
+      </p>
     </div>
     
   </body>
-  
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="javascripts/main.js"></script>  
 </html>
