@@ -4,7 +4,7 @@ $(document).ready(function() {
     if(startButtonClicked) {
       $('#startButton').hide();
       $('#title').hide();
-      $('#gameScreenContainer').load("test.html");
+      $('#gameScreenContainer').load("flashObject.html");
     }
     else {
       $('#gameScreen').css('font-size','2em');
